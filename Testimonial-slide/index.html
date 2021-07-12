@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <title>Testimonial Slider</title>
+        <!--style-->
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+
+    <body>
+        <div class="hero">
+            <h1>Testimonials</h1>
+
+            <div class="container">
+                <div class="indicator">
+                    <span class="btn active"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                    <span class="btn"></span>
+                </div>
+                <div class="testimonial">
+                    <div class="slide-row" id="slide" >
+                        <div class="slide-col">
+                            <div class="user-text">
+                                <p>Abishak is an Indian internet entrepreneur and media properties
+                                    He is the founder of the multiple of singles.
+                                </p>
+                                <h3>Abishak</h3>
+                                <p>Abi Inc.,</p>
+        
+                            </div>
+                            <div class="user-img">
+                                <img src="user1.png" alt="Abi">
+                            </div>
+                        </div>
+        
+                        <div class="slide-col">
+                            <div class="user-text">
+                                <p>Abishak is an Indian internet entrepreneur and media properties
+                                    He is the founder of the multiple of singles.
+                                </p>
+                                <h3>Abishak</h3>
+                                <p>Abi Inc.,</p>
+        
+                            </div>
+                            <div class="user-img">
+                                <img src="user2.png" alt="Abi">
+                            </div>
+                        </div>
+        
+                        <div class="slide-col">
+                            <div class="user-text">
+                                <p>Abishak is an Indian internet entrepreneur and media properties
+                                    He is the founder of the multiple of singles.
+                                </p>
+                                <h3>Abishak</h3>
+                                <p>Abi Inc.,</p>
+        
+                            </div>
+                            <div class="user-img">
+                                <img src="user3.png" alt="Abi">
+                            </div>
+                        </div>
+        
+                        <div class="slide-col">
+                            <div class="user-text">
+                                <p>Abishak is an Indian internet entrepreneur and media properties
+                                    He is the founder of the multiple of singles.
+                                </p>
+                                <h3>Abishak</h3>
+                                <p>Abi Inc.,</p>
+        
+                            </div>
+                            <div class="user-img">
+                                <img src="user4.png" alt="Abi">
+                            </div>
+                        </div>
+                    </div>
+                </div>   
+
+            </div>
+
+            
+        </div>
+
+        <script>
+            var btn=document.getElementsByClassName("btn");
+            var slide=document.getElementById("slide");
+
+            btn[0].onclick=function(){
+                slide.style.transform = "translateX(0px)";
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+
+            btn[1].onclick=function(){
+                slide.style.transform = "translateX(-800px)";
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+
+            btn[2].onclick=function(){
+                slide.style.transform = "translateX(-1600px)";
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+
+            btn[3].onclick=function(){
+                slide.style.transform = "translateX(-2400px)";
+                for(i=0;i<4;i++){
+                    btn[i].classList.remove("active");
+                }
+                this.classList.add("active");
+            }
+        </script>
+    </body>
+</html>
